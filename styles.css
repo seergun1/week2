@@ -37,6 +37,12 @@ form {
     display: flex;
     flex-direction: column;
     max-width: 20vw; /* 20% of view width*/
+    min-width: 100px;
+}
+
+form h4 {
+    background-color: blueviolet;
+    max-width: fit-content;
 }
 
 /* games */
@@ -44,7 +50,12 @@ form {
 #oldfaves { /* # is for linking to id's*/
     display: flex;
     justify-content: space-around;
-    width: 500px;
+    flex-wrap: wrap;
+    list-style: lower-roman;
+}
+
+.imgs {
+    max-width: 250px;
 }
 
 /* magic */
@@ -55,8 +66,8 @@ table {
 }
 
 caption {
-    text-align: left;
-    font-size: large;
+    font-style: italic;
+    background-color: white; 
 }
 
 th {
